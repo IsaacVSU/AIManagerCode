@@ -98,8 +98,6 @@ class AiManager:
         output_message: OutputPb = OutputPb()
         # ShipActionPb's are built using the same sytax as the printStateInfo function
         ship_action: ShipActionPb = ShipActionPb()
-        if(not enemyList):
-            return output_message
         ship_action.TargetId = 10
         ship_action.AssetName = "I AM A GOD"
         ship_action.weapon = "Chainshot_System"
