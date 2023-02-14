@@ -4,6 +4,7 @@ from PlannerProto_pb2 import ErrorPb                                            
 from PlannerProto_pb2 import StatePb, AssetPb, TrackPb                          #Simulation state information
 from PlannerProto_pb2 import OutputPb, ShipActionPb,  WeaponPb
 from publisher import Publisher
+import math
 
 
 # This class is the center of action for this example client.  Its has the required functionality 
@@ -14,6 +15,9 @@ from publisher import Publisher
 # "receive" is used to notify the subscriber that "this method wants to receive a proto message"
 
 # The second part of the function name is the type of proto message it wants to receive, thus proto
+def distance(x0, y0, z0, x1, y1, z1):
+    return math.sqrt((x1-x0)**2 +(y1-y0)**2 + (z1 - z0)**2)
+
 # message names are also protected
 class AiManager:
 
@@ -22,6 +26,7 @@ class AiManager:
         print("Constructing AI Manager")
         self.ai_pub = publisher
         self.count = 0
+        self.missile = 1
    
     # Is passed StatePb from Planner
     def receiveStatePb(self, msg:StatePb):
@@ -83,26 +88,45 @@ class AiManager:
     #[x,y,z] same line
     #round the numbers to 3 decimal points
     def createActions(self, msg:StatePb):
+        enemyShips = []
+        self.count += 1
+        x0 = 0
+        y0 = 0
+        z0 = 0
+        x1 = 0
+        y1 = 0
+        z1 = 0
         with open("output.txt", 'a') as f1:
-            self.count += 1
-            enemyList = []
-            MyShips = []
             for track in msg.Tracks:
-                f1.write(f"\n{self.count}____{track.TrackId} , {track.ThreatId}, {track.ThreatRelationship}, {track.Lle}, {round(track.PositionX,3)}, {round(track.PositionY,3)}, {round(track.PositionZ,3)}, {round(track.VelocityX,3)}, {round(track.VelocityY,3)}, {round(track.VelocityZ,3)}")
+                x1 = track.PositionX
+                y1 = track.PositionY
+                z1 = track.PositionZ
+                enemyShips.append(track.ThreatId)
+                f1.write(f"\n{self.count}, {track.TrackId} , {track.ThreatId}, {track.ThreatRelationship}, {track.Lle}, {round(track.PositionX,3)}, {round(track.PositionY,3)}, {round(track.PositionZ,3)}, {round(track.VelocityX,3)}, {round(track.VelocityY,3)}, {round(track.VelocityZ,3)}")
         with open("assets.txt", 'a') as f2:
             for asset in msg.assets:
                 if(asset.AssetName=="Galleon_REFERENCE_SHIP"):
                     continue
-                f2.write(f"\n{self.count}----{asset.AssetName}, {asset.isHVU}, {asset.health}, {asset.PositionX}, {asset.PositionY}, {asset.PositionZ}, {asset.Lle}, {asset.weapons}")
+                x0 = asset.PositionX
+                y0 = asset.PositionY
+                z0 = asset.PositionZ
+                f2.write(f"\n{self.count}, {asset.AssetName}, {asset.isHVU}, {asset.health}, {round(asset.PositionX,3)}, {round(asset.PositionY,3)}, {round(asset.PositionZ,3)}, {asset.Lle}, {asset.weapons}")
         # ShipActionPb's go into an OutputPb message
+        distanceB = distance(x0,y0,z0, x1, y1, z1)
+        print("-_-")
+        print(distanceB)
+        print(self.missile)
         output_message: OutputPb = OutputPb()
         # ShipActionPb's are built using the same sytax as the printStateInfo function
-        ship_action: ShipActionPb = ShipActionPb()
-        ship_action.TargetId = 10
-        ship_action.AssetName = "I AM A GOD"
-        ship_action.weapon = "Chainshot_System"
+        if distanceB<20000 and self.missile > 0 and len(enemyShips) != 0: #distance has to be compared to the millions
+            print("Firing!")
+            self.missile -= 1
+            ship_action: ShipActionPb = ShipActionPb()
+            ship_action.TargetId = 3
+            ship_action.AssetName = "HVU_Galleon_0"
+            ship_action.weapon = "Chainshot_System"
         # As stated, shipActions go into the OutputPb as a list of ShipActionPbs
-        output_message.actions.append(ship_action)
+            output_message.actions.append(ship_action)
         return output_message
     # Function to print state information and provide syntax examples for accessing protobuf messags
 #
