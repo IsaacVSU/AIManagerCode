@@ -13,6 +13,9 @@ import numpy as np
 # (1) if action has incorrect target id, weapon fire fail. same if incorrect asset name and weapon name
 # (2) fire the same weapon (of the same ship) twice in the same loop will have the second shot fail, so only one shot a time per ship
 # (3) canon is > 2 times faster than chain shot,
+# (4) score: canon -400 per shot, chainshot -200 per shot,
+# (5) score: take a hit -2000, kill one enemy +600
+# (6) each ship weapon is limited, so need to cound how many shot remaining in each ship when fire.
 
 
 # This class is the center of action for this example client.  Its has the required functionality 
@@ -46,6 +49,7 @@ class AiManager:
         self.enemyShipsName_curr = []
 
         self.friendlyHealths_curr = [] # list of health of friendly ship
+        self.fired_shots ={} # dict of fired shot, used in alg2 so no double shot at same target
         self.new_obs_flag = False
         self.info = ""
         self.ai_callback = None
@@ -172,6 +176,10 @@ class AiManager:
             print("6: " + str(asset.PositionZ))
             print("7: " + str(asset.Lle))
             print("8: " + str(asset.weapons))
+            for weapon in asset.weapons:
+            
+                print("8: " , weapon.Quantity)
+            #print("weapons ", type(asset.weapons)) #'google.protobuf.pyext._message.RepeatedCompositeContainer'>
         print("--------------------")
 
         # Accessing track information is done the same way.  
@@ -188,50 +196,14 @@ class AiManager:
             print("9 " + str(track.VelocityY))
             print("10: " + str(track.VelocityZ))
         print("**********************************")
-    # Example function for building OutputPbs, returns OutputPb
-    #Try:
-    #Save the enemy list and enemy list into a file
-    #simple file format probably in a MD file or smth
-    #[x,y,z] same line
-    #round the numbers to 3 decimal points
-    def createActions(self, msg:StatePb):
-        enemyShips = []
-        assetShips = []
-        enemyPositions = []
-        assetPositions = []
-        self.count += 1
-        x0 = 0
-        y0 = 0
-        z0 = 0
-        x1 = 0
-        y1 = 0
-        z1 = 0
-        with open("output.txt", 'a') as f1:
-            for track in msg.Tracks:
-                x1 = track.PositionX
-                y1 = track.PositionY
-                z1 = track.PositionZ
-                
-                if track.ThreatRelationship=='Hostile':
-                    enemyShips.append(track.TrackId)
-                    enemyPositions.append([x1, y1, z1] )
-                f1.write(f"\n{self.count}, {track.TrackId} , {track.ThreatId}, {track.ThreatRelationship}, {track.Lle}, {round(track.PositionX,3)}, {round(track.PositionY,3)}, {round(track.PositionZ,3)}, {round(track.VelocityX,3)}, {round(track.VelocityY,3)}, {round(track.VelocityZ,3)}")
-        with open("assets.txt", 'a') as f2:
-            for asset in msg.assets:
-                if(asset.AssetName=="Galleon_REFERENCE_SHIP"):
-                    continue
-                x0 = asset.PositionX
-                y0 = asset.PositionY
-                z0 = asset.PositionZ
-                assetShips.append(asset.AssetName)
-                assetPositions.append([x0, y0, z0] )
-                f2.write(f"\n{self.count}, {asset.AssetName}, {asset.isHVU}, {asset.health}, {round(asset.PositionX,3)}, {round(asset.PositionY,3)}, {round(asset.PositionZ,3)}, {asset.Lle}, {asset.weapons}")
-        # ShipActionPb's go into an OutputPb message
 
+    # simple alg to generate action
+    def action_alg1(self, enemyShips, enemyPositions, assetShips, assetPositions, assetWeapons):
         distanceB = 100000 #distance(x0,y0,z0, x1, y1, z1)
         for enemypos in enemyPositions:
             for assetpos in assetPositions:
                 dist2 = distance(enemypos[0],enemypos[1], enemypos[2], assetpos[0], assetpos[1], assetpos[2])
+                print("dbg: ", enemypos, assetpos, dist2)
                 if dist2 < distanceB:
                     distanceB = dist2
         print("-_- minimum distance")
@@ -256,7 +228,120 @@ class AiManager:
                 ship_action2.AssetName = assetShips[1] # "HVU_Galleon_0"
                 ship_action2.weapon = "Chainshot_System" # or "Cannon_System"
                 output_message.actions.append(ship_action2)
+        return output_message
 
+    # simple alg to generate action
+    def action_alg2(self, enemyShips, enemyPositions, assetShips, assetPositions, assetWeapons):
+        output_message: OutputPb = OutputPb()
+        enemyShips_unassigned=[]
+        enemyPositions_unassigned = []
+        print("alg2 dbg fired shots: ", str(self.fired_shots), " remaining weapons list len: ", len(assetWeapons))
+        for i, enemy in enumerate(enemyShips):
+            if enemy in self.fired_shots.keys():
+                continue
+            enemyShips_unassigned.append(enemy)
+            enemyPositions_unassigned.append(enemyPositions[i])
+
+        # calc distances for each unassigned enemy
+        dist_enemy = np.ones(len(enemyPositions_unassigned)) * 100000
+        for i, enemy2 in enumerate(enemyPositions_unassigned):
+            for assetpos in assetPositions:
+                dist2 = distance(enemy2[0],enemy2[1],enemy2[2],assetpos[0],assetpos[1], assetpos[2])
+                if dist2 < dist_enemy[i]:
+                    dist_enemy[i] = dist2
+        print("alg2 dbg dist_enemy: ", dist_enemy)
+        ind_sort = np.argsort(dist_enemy)
+        print("alg2 dbg sort indx: ", ind_sort)
+        print('weapon# list ', assetWeapons)
+        if len(assetWeapons)==0:
+            print("alg2 dbg: no more weapon!")
+            return
+        assetWeapons = np.array(assetWeapons)
+        weapon_combined = np.sum(assetWeapons, axis=1)
+        weapon_desord = np.argsort(weapon_combined)[::-1]
+
+        print('weapon# combined list ', weapon_combined)
+        print('ship ', assetShips)
+        print('desord ', weapon_desord)
+     
+        assetWeapons_des = assetWeapons[weapon_desord]
+        assetShips_np = np.array(assetShips)
+        assetShips_des = assetShips_np[weapon_desord]
+        print("alg2 dbg weapons: ", assetWeapons_des)
+
+        for i, ii in enumerate(ind_sort): #loop over enemy
+            if i> len(assetShips_des):
+                print("alg2 dbg: ship # limit to fire")
+                break # maximum engagement # is assetship number
+            if dist_enemy[ii] > 20000:
+                print("alg2 dbg: enemy too far, delay for next time")
+                break # enemy too far to engage
+            if (np.sum(assetWeapons_des[i]) ==0):
+                print ("alg2 dbg: weapon # 0 for both type: ", assetShips_des[i] )
+                break
+            ship_action2: ShipActionPb = ShipActionPb()
+            print("alg2 dbg action init: ", ship_action2)
+            ship_action2.TargetId = enemyShips_unassigned[ii] # ii index of the i-th closest enemy
+            ship_action2.AssetName = assetShips_des[i] # i-th asset
+
+            if assetWeapons_des[i][0] >0:
+                ship_action2.weapon = "Cannon_System"
+            else:
+                ship_action2.weapon = "Chainshot_System" # or "Cannon_System"
+            print("alg2 dbg firing: ", ship_action2)
+            output_message.actions.append(ship_action2)
+            self.fired_shots[enemyShips_unassigned[ii]] = ship_action2
+
+        return output_message
+
+    # Example function for building OutputPbs, returns OutputPb
+    #Try:
+    #Save the enemy list and enemy list into a file
+    #simple file format probably in a MD file or smth
+    #[x,y,z] same line
+    #round the numbers to 3 decimal points
+    def createActions(self, msg:StatePb):
+        enemyShips = []
+        assetShips = []
+        enemyPositions = []
+        assetPositions = []
+        assetWeapons = [] # nx2 each ship has two weapon types, this list save the number of  remaining for each ship's weapon 
+        self.count += 1
+        x0 = 0
+        y0 = 0
+        z0 = 0
+        x1 = 0
+        y1 = 0
+        z1 = 0
+        with open("output.txt", 'a') as f1:
+            for track in msg.Tracks:
+                x1 = track.PositionX
+                y1 = track.PositionY
+                z1 = track.PositionZ
+                
+                if track.ThreatRelationship=='Hostile':
+                    enemyShips.append(track.TrackId)
+                    enemyPositions.append([x1, y1, z1] )
+                f1.write(f"\n{self.count}, {track.TrackId} , {track.ThreatId}, {track.ThreatRelationship}, {track.Lle}, {round(track.PositionX,3)}, {round(track.PositionY,3)}, {round(track.PositionZ,3)}, {round(track.VelocityX,3)}, {round(track.VelocityY,3)}, {round(track.VelocityZ,3)}")
+        with open("assets.txt", 'a') as f2:
+            for asset in msg.assets:
+                if(asset.AssetName=="Galleon_REFERENCE_SHIP"):
+                    continue
+                x0 = asset.PositionX
+                y0 = asset.PositionY
+                z0 = asset.PositionZ
+
+                wn=[] #weapon number list
+                for weapon in asset.weapons:
+                    print('weapon checking ', weapon)
+                    wn.append(weapon.Quantity)
+                assetShips.append(asset.AssetName)
+                assetPositions.append([x0, y0, z0] )
+                assetWeapons.append(wn)
+                f2.write(f"\n{self.count}, {asset.AssetName}, {asset.isHVU}, {asset.health}, {round(asset.PositionX,3)}, {round(asset.PositionY,3)}, {round(asset.PositionZ,3)}, {asset.Lle}, {asset.weapons}")
+
+        output_message = self.action_alg2(enemyShips, enemyPositions, assetShips, assetPositions, assetWeapons)
+#        output_message = self.action_alg1(enemyShips, enemyPositions, assetShips, assetPositions, assetWeapons)
         #wang this is where we decide to use ai action or regular action
         if self.use_myai:
             output_message = self.ai_output_message

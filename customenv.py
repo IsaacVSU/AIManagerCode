@@ -60,7 +60,7 @@ class CustomEnv(gym.Env):
         self.threats_obs = self.threats_obs[:self.threat_size] # limit to 10 as our ai model assume 10x2 obs space
         self.ai_manager.new_obs_flag = False
         print("step: threats_obs= ", self.threats_obs)
-        obs=np.zeros((10,2))
+        obs=np.zeros((self.threat_size,2))
         threats_num=len(self.threats_obs)
         if threats_num>0:            
             obs[:threats_num] = self.threats_obs.astype(np.float32)

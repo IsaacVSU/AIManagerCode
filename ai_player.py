@@ -18,11 +18,16 @@ from AiManager import AiManager
 # print(obs.shape, reward, done, info)
 
 def aicallback_func(threats_obs,reward,done,info, threats_IDs):
+    global env
+
     print("aicallback_func ****** enemy #: ", len(threats_obs))
-    obs=np.zeros((10,2))
+    #print(env.observation_space.shape[0])
+    obs_size_aimodel = env.observation_space.shape[0]
+    obs=np.zeros((obs_size_aimodel,2)) # 10x2 
     threats_num=len(threats_obs)
-    if threats_num>0:            
-        obs[:threats_num] = threats_obs.astype(np.float32)
+    if threats_num>0:
+        obs_threat_used = min(threats_num, obs_size_aimodel)            
+        obs[:obs_threat_used] = threats_obs[:obs_threat_used].astype(np.float32)
     print(threats_IDs)
     print(obs)
     action=0
@@ -30,11 +35,9 @@ def aicallback_func(threats_obs,reward,done,info, threats_IDs):
     return action
 
 publisher = Publisher()
-
 subscriber = Subscriber()
 ai_manager = AiManager(publisher)
-
-    #Register subscriber functions of Ai manager and begin listening for messages
+#Register subscriber functions of Ai manager and begin listening for messages
 subscriber.registerSubscribers(ai_manager)
 subscriber.startSubscriber(blocking=False)
 
@@ -52,6 +55,7 @@ print(env.action_space.sample())
 model = A2C("MlpPolicy", env, verbose=1)
 #model.learn(total_timesteps=10_000)
 
+aicallback_func([],0,0,0,0)
 vec_env = model.get_env()
 obs = vec_env.reset()
 
