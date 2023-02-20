@@ -29,7 +29,7 @@ class Subscriber:
             print(function_name + " registered")
 
     # Starts TCP socket and main recieve loop
-    def startSubscriber(self):
+    def startSubscriber(self, blocking=True):
         event = threading.Event()
         context = zmq.Context()
         socket = context.socket(zmq.SUB)
@@ -40,7 +40,7 @@ class Subscriber:
             t = threading.Thread(name="recvr-thread", target=self.recvloop, args=[socket, event])
             t.start()
 
-            while t.is_alive():
+            while t.is_alive() and blocking:
                 t.join(1)
         except KeyboardInterrupt:
             event.set()
