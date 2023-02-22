@@ -1,3 +1,5 @@
+#Zoom recording link
+# https://vsu.zoom.us/rec/share/8RKNswRckoBtBLdZ1qytc0PVHJX4VY-EU6atdRCuAZkiOtV9EhmSC1vBZNJUzrZc.6SIwoVzl_5b3-8Ck 
 #Imports
 from PlannerProto_pb2 import ScenarioConcludedNotificationPb, ScenarioInitializedNotificationPb     #Scenario start/end notifications
 from PlannerProto_pb2 import ErrorPb                                            #Error messsage if scenario fails
@@ -198,37 +200,37 @@ class AiManager:
         print("**********************************")
 
     # simple alg to generate action
-    def action_alg1(self, enemyShips, enemyPositions, assetShips, assetPositions, assetWeapons):
-        distanceB = 100000 #distance(x0,y0,z0, x1, y1, z1)
-        for enemypos in enemyPositions:
-            for assetpos in assetPositions:
-                dist2 = distance(enemypos[0],enemypos[1], enemypos[2], assetpos[0], assetpos[1], assetpos[2])
-                print("dbg: ", enemypos, assetpos, dist2)
-                if dist2 < distanceB:
-                    distanceB = dist2
-        print("-_- minimum distance")
-        print(distanceB)
-        print(self.missile)
-        output_message: OutputPb = OutputPb()
+    #def action_alg1(self, enemyShips, enemyPositions, assetShips, assetPositions, assetWeapons):
+    #    distanceB = 100000 #distance(x0,y0,z0, x1, y1, z1)
+    #    for enemypos in enemyPositions:
+    #        for assetpos in assetPositions:
+    #            dist2 = distance(enemypos[0],enemypos[1], enemypos[2], assetpos[0], assetpos[1], assetpos[2])
+    #            print("dbg: ", enemypos, assetpos, dist2)
+    #            if dist2 < distanceB:
+    #                distanceB = dist2
+    #    print("-_- minimum distance")
+    #    print(distanceB)
+    #    print(self.missile)
+        #output_message: OutputPb = OutputPb()
         # ShipActionPb's are built using the same sytax as the printStateInfo function
-        if distanceB<20000 and self.missile > 0 and len(enemyShips) != 0: #distance has to be compared to the millions
-            print("Firing!", enemyShips)
-            self.missile -= 1
-            ship_action: ShipActionPb = ShipActionPb()
-            ship_action.TargetId = enemyShips[0] #3 # this should be one of the valid enemy trackId
-            ship_action.AssetName = assetShips[0] # "HVU_Galleon_0"
-            ship_action.weapon = "Cannon_System" # or "Cannon_System"
-        # As stated, shipActions go into the OutputPb as a list of ShipActionPbs
-            output_message.actions.append(ship_action)
-            if len(enemyShips) >1 and len(assetShips) >1:
-                print("Firing! 2nd shot!")
-                self.missile -= 1
-                ship_action2: ShipActionPb = ShipActionPb()
-                ship_action2.TargetId = enemyShips[1] # enemyShips[0] #3 # this should be one of the valid enemy trackId
-                ship_action2.AssetName = assetShips[1] # "HVU_Galleon_0"
-                ship_action2.weapon = "Chainshot_System" # or "Cannon_System"
-                output_message.actions.append(ship_action2)
-        return output_message
+        # if distanceB<20000 and self.missile > 0 and len(enemyShips) != 0: #distance has to be compared to the millions
+        #     print("Firing!", enemyShips)
+        #     self.missile -= 1
+        #     ship_action: ShipActionPb = ShipActionPb()
+        #     ship_action.TargetId = enemyShips[0] #3 # this should be one of the valid enemy trackId
+        #     ship_action.AssetName = assetShips[0] # "HVU_Galleon_0"
+        #     ship_action.weapon = "Cannon_System" # or "Cannon_System"
+        # # As stated, shipActions go into the OutputPb as a list of ShipActionPbs
+        #     output_message.actions.append(ship_action)
+        #     if len(enemyShips) >1 and len(assetShips) >1:
+        #         print("Firing! 2nd shot!")
+        #         self.missile -= 1
+        #         ship_action2: ShipActionPb = ShipActionPb()
+        #         ship_action2.TargetId = enemyShips[1] # enemyShips[0] #3 # this should be one of the valid enemy trackId
+        #         ship_action2.AssetName = assetShips[1] # "HVU_Galleon_0"
+        #         ship_action2.weapon = "Chainshot_System" # or "Cannon_System"
+        #         output_message.actions.append(ship_action2)
+        # return output_message
 
     # simple alg to generate action
     def action_alg2(self, enemyShips, enemyPositions, assetShips, assetPositions, assetWeapons):
@@ -260,9 +262,12 @@ class AiManager:
         weapon_combined = np.sum(assetWeapons, axis=1)
         weapon_desord = np.argsort(weapon_combined)[::-1]
 
+        #[[1,2],[3,4]]
+        #[[3],[7]] -> [[7][3]]
+
         print('weapon# combined list ', weapon_combined)
         print('ship ', assetShips)
-        print('desord ', weapon_desord)
+        print('desord ', weapon_desord) #descending order
      
         assetWeapons_des = assetWeapons[weapon_desord]
         assetShips_np = np.array(assetShips)
