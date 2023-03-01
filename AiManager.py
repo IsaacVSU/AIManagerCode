@@ -306,6 +306,8 @@ class AiManager:
     #[x,y,z] same line
     #round the numbers to 3 decimal points
     def createActions(self, msg:StatePb):
+        with open("firedShots.txt",'a') as f1:
+            f1.write(f"\nself.fired_shots = {self.fired_shots}")
         enemyShips = []
         assetShips = []
         enemyPositions = []
@@ -351,6 +353,7 @@ class AiManager:
         if self.use_myai:
             output_message = self.ai_output_message
         return output_message
+                                print(""")
     # Function to print state information and provide syntax examples for accessing protobuf messags
 #
 
