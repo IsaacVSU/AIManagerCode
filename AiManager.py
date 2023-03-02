@@ -55,6 +55,26 @@ class AiManager:
         self.new_obs_flag = False
         self.info = ""
         self.ai_callback = None
+        self.enemiesx1y1 = []
+        self.enemeiesx2y2 = []
+    def reset(self):
+        if(self.done):
+            self.count = 0
+            self.missile = 8
+            self.newobs = False
+            self.last_msg = None
+            self.done = False
+            self.use_myai = False
+            self.enemyShipsID_curr = [] # list of the TrackId of enemy missile
+            self.enemyPositions_curr=[]
+            self.friendlyShips_curr = [] # list of names of friendly ship
+            self.friendlyPositions_curr = [] # xy position of friednly ship, 
+            self.enemyShipsName_curr = []
+            self.friendlyHealths_curr = [] # list of health of friendly ship
+            self.fired_shots ={} # dict of fired shot, used in alg2 so no double shot at same target
+            self.new_obs_flag = False
+            self.info = ""
+            self.ai_callback = None
     
     # wang ai callback is called in receivedStatePb 
     def set_aicallback(self, aicallback):
@@ -146,6 +166,7 @@ class AiManager:
             self.do_aiaction(self.ai_action_0)
         # Call function to show example of building an action
         output_message = self.createActions(msg)
+        self.reset()
         print(output_message)
 
         # To advance in step mode, its required to return an OutputPb
@@ -353,7 +374,6 @@ class AiManager:
         if self.use_myai:
             output_message = self.ai_output_message
         return output_message
-                                print(""")
     # Function to print state information and provide syntax examples for accessing protobuf messags
 #
 
