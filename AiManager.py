@@ -417,6 +417,7 @@ class AiManager:
         self.assetShips = dict()
         self.enemyToFireAt = []
         self.hvu = -1
+        self.seenMissiles = []
 
     def reset(self):
         if self.done:
@@ -443,6 +444,7 @@ class AiManager:
             self.assetShips = dict()
             self.enemyToFireAt = []
             self.hvu = -1
+            self.seenMissiles = []
 
     # wang ai callback is called in receivedStatePb
     def set_aicallback(self, aicallback):
@@ -788,36 +790,44 @@ class AiManager:
     #     return output_message
 
     def action_alg4(self, enemyShips, enemyPositions, assetShips, assetPositions, assetWeapons):
+
+        newMissiles = {enemyShips[i]: i for i in range(len(enemyShips)) if enemyShips[i] not in self.seenMissiles}
+        print('NEW MISSILES', newMissiles)
         output_message: OutputPb = OutputPb()
 
-        for i in range(len(assetShips)): #Creates dictionary from assetShips {1 (ship ID): [], ...}
-            self.assetShips[i] = []
-            if assetShips[i][0:3] == 'HVU':
-                self.hvu = i #Stores HVU ship
-        if self.hvu != -1: #Reorders dict so that the HVU ship is first, only reorders if necessary
-            newAssetShips = {}
-            newAssetShips[self.hvu] = []
-            for i in range(len(assetShips)):
-                if i != self.hvu:
-                    newAssetShips[i] = []
-        self.assetShips = newAssetShips
-        minDistanceToEnemy = 10000000000
-        for i, enemy2 in enumerate(enemyPositions): #Builds assetShips so that assetShips stores enemies targeting it {1 (ship ID): [list of enemies], ...}
-            asset = 0
-            minDis = 100000000000
-            for j in range(len(assetPositions)):
-                dist2 = distance(enemy2[0], enemy2[1], enemy2[2], assetPositions[j][0], assetPositions[j][1], assetPositions[j][2])
-                minDistanceToEnemy = min(minDistanceToEnemy, dist2)
-                if dist2 < minDis:
-                    minDis = dist2
-                    asset = j
-            if asset not in self.assetShips:
-                self.assetShips[asset] = []
-            self.assetShips[asset].append(enemyShips[i])
-        
-        if minDistanceToEnemy > 40000: #Only starts firing if missiles are 50000 away - don't want to fire too early in case not all missiles have fired yet
-            print('SHIPS TOO FAR AWAY - DON\'T ENGAGE YET', minDistanceToEnemy)
-            return output_message
+        if len(self.assetShips) == 0:
+            for i in range(len(assetShips)): #Creates dictionary from assetShips {1 (ship ID): [], ...}
+                self.assetShips[i] = []
+                if assetShips[i][0:3] == 'HVU':
+                    self.hvu = i #Stores HVU ship
+            if self.hvu != -1: #Reorders dict so that the HVU ship is first, only reorders if necessary
+                newAssetShips = {}
+                newAssetShips[self.hvu] = []
+                for i in range(len(assetShips)):
+                    if i != self.hvu:
+                        newAssetShips[i] = []
+            self.assetShips = newAssetShips
+
+        if len(newMissiles) != 0:
+            minDistanceToEnemy = 10000000000
+            for enemy in newMissiles:
+                asset = 0
+                minDis = 100000000000
+                for j in range(len(assetPositions)):
+                    dist2 = distance(enemyPositions[newMissiles[enemy]][0], enemyPositions[newMissiles[enemy]][1], enemyPositions[newMissiles[enemy]][2], assetPositions[j][0], assetPositions[j][1], assetPositions[j][2])
+                    minDistanceToEnemy = min(minDistanceToEnemy, dist2)
+                    if dist2 < minDis:
+                        minDis = dist2
+                        asset = j
+                if asset not in self.assetShips:
+                    self.assetShips[asset] = []
+                self.assetShips[asset].append(enemy)
+                self.seenMissiles.append(enemy)
+            
+            if minDistanceToEnemy > 50000: #Only starts firing if missiles are 50000 away - don't want to fire too early in case not all missiles have fired yet
+                print('SHIPS TOO FAR AWAY - DON\'T ENGAGE YET', minDistanceToEnemy)
+                return output_message
+        print('ASSET SHIPS: ', self.assetShips)
         
         weaponsRemaining = sum([i[0] + i[1] for i in assetWeapons]) #calculates number of remaining weapons
         for ship in self.assetShips: #first priority is to make sure that no ship dies, starting with the HVU ship
