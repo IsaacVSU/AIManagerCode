@@ -55,8 +55,6 @@ class AiManager:
         self.new_obs_flag = False
         self.info = ""
         self.ai_callback = None
-        self.enemiesx1y1 = []
-        self.enemeiesx2y2 = []
     def reset(self):
         if(self.done):
             self.count = 0
@@ -70,11 +68,13 @@ class AiManager:
             self.friendlyShips_curr = [] # list of names of friendly ship
             self.friendlyPositions_curr = [] # xy position of friednly ship, 
             self.enemyShipsName_curr = []
+
             self.friendlyHealths_curr = [] # list of health of friendly ship
             self.fired_shots ={} # dict of fired shot, used in alg2 so no double shot at same target
             self.new_obs_flag = False
             self.info = ""
             self.ai_callback = None
+
     
     # wang ai callback is called in receivedStatePb 
     def set_aicallback(self, aicallback):
@@ -166,7 +166,6 @@ class AiManager:
             self.do_aiaction(self.ai_action_0)
         # Call function to show example of building an action
         output_message = self.createActions(msg)
-        self.reset()
         print(output_message)
 
         # To advance in step mode, its required to return an OutputPb
@@ -181,6 +180,7 @@ class AiManager:
     def receiveScenarioConcludedNotificationPb(self, msg:ScenarioConcludedNotificationPb):
         print("Ended Run: " + str(msg.sessionId) + " with score: " + str(msg.score))
         self.done = True
+        self.reset()
         self.info = "Ended Run: " + str(msg.sessionId) + " with score: " + str(msg.score)
 
     def printStateInfo(self, msg:StatePb):
@@ -299,9 +299,9 @@ class AiManager:
             if i> len(assetShips_des):
                 print("alg2 dbg: ship # limit to fire")
                 break # maximum engagement # is assetship number
-            if dist_enemy[ii] > 20000:
-                print("alg2 dbg: enemy too far, delay for next time")
-                break # enemy too far to engage
+            # if dist_enemy[ii] > 20000:
+            #     print("alg2 dbg: enemy too far, delay for next time")
+            #     break # enemy too far to engage
             if (np.sum(assetWeapons_des[i]) ==0):
                 print ("alg2 dbg: weapon # 0 for both type: ", assetShips_des[i] )
                 break
@@ -310,10 +310,10 @@ class AiManager:
             ship_action2.TargetId = enemyShips_unassigned[ii] # ii index of the i-th closest enemy
             ship_action2.AssetName = assetShips_des[i] # i-th asset
 
-            if assetWeapons_des[i][0] >0:
-                ship_action2.weapon = "Cannon_System"
+            if assetWeapons_des[i][1] >0:
+                ship_action2.weapon = "Chainshot_System"
             else:
-                ship_action2.weapon = "Chainshot_System" # or "Cannon_System"
+                ship_action2.weapon = "Cannon_System" # or "Cannon_System"
             print("alg2 dbg firing: ", ship_action2)
             output_message.actions.append(ship_action2)
             self.fired_shots[enemyShips_unassigned[ii]] = ship_action2
@@ -327,8 +327,6 @@ class AiManager:
     #[x,y,z] same line
     #round the numbers to 3 decimal points
     def createActions(self, msg:StatePb):
-        with open("firedShots.txt",'a') as f1:
-            f1.write(f"\nself.fired_shots = {self.fired_shots}")
         enemyShips = []
         assetShips = []
         enemyPositions = []
@@ -376,5 +374,4 @@ class AiManager:
         return output_message
     # Function to print state information and provide syntax examples for accessing protobuf messags
 #
-
 
