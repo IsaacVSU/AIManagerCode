@@ -418,6 +418,8 @@ class AiManager:
         self.enemyToFireAt = []
         self.hvu = -1
         self.seenMissiles = []
+        self.enemyTargets = dict()
+        self.missilesDestroyedPerShip = dict()
 
     def reset(self):
         if self.done:
@@ -445,6 +447,8 @@ class AiManager:
             self.enemyToFireAt = []
             self.hvu = -1
             self.seenMissiles = []
+            self.enemyTargets = dict()
+            self.missilesDestroyedPerShip = dict()
 
     # wang ai callback is called in receivedStatePb
     def set_aicallback(self, aicallback):
@@ -822,6 +826,7 @@ class AiManager:
                 if asset not in self.assetShips:
                     self.assetShips[asset] = []
                 self.assetShips[asset].append(enemy)
+                self.enemyTargets[enemy] = asset
                 self.seenMissiles.append(enemy)
             
             if minDistanceToEnemy > 50000: #Only starts firing if missiles are 50000 away - don't want to fire too early in case not all missiles have fired yet
@@ -853,19 +858,32 @@ class AiManager:
         enemy = self.enemyToFireAt.pop(0) #Only 1 enemy is destroyed per tick
         ship_action2: ShipActionPb = ShipActionPb()
         ship_action2.TargetId = enemy
-        for i in range(len(assetWeapons)): #Looks through weapons to see how many is left, fires chainshots before cannons (assuming that all weapons are exhausted)
-            if assetWeapons[i][1] > 0:
-                ship_action2.AssetName = assetShips[i]
-                ship_action2.weapon = "Chainshot_System"
-                print("alg2 dbg firing: ", ship_action2)
-                output_message.actions.append(ship_action2)
-                return output_message
-            elif assetWeapons[i][0] > 0:
-                ship_action2.AssetName = assetShips[i]
-                ship_action2.weapon = "Cannon_System"
-                print("alg2 dbg firing: ", ship_action2)
-                output_message.actions.append(ship_action2)
-                return output_message
+        if assetWeapons[self.enemyTargets[enemy]][1] > 0:
+            ship_action2.AssetName = assetShips[self.enemyTargets[enemy]]
+            ship_action2.weapon = "Chainshot_System"
+            print("alg2 dbg firing: ", ship_action2)
+            output_message.actions.append(ship_action2)
+            return output_message
+        elif assetWeapons[self.enemyTargets[enemy]][0] > 0:
+            ship_action2.AssetName = assetShips[self.enemyTargets[enemy]]
+            ship_action2.weapon = "Cannon_System"
+            print("alg2 dbg firing: ", ship_action2)
+            output_message.actions.append(ship_action2)
+            return output_message
+        else:
+            for i in range(len(assetWeapons)): #Looks through weapons to see how many is left, fires chainshots before cannons (assuming that all weapons are exhausted)
+                if assetWeapons[i][1] > 0:
+                    ship_action2.AssetName = assetShips[i]
+                    ship_action2.weapon = "Chainshot_System"
+                    print("alg2 dbg firing: ", ship_action2)
+                    output_message.actions.append(ship_action2)
+                    return output_message
+                elif assetWeapons[i][0] > 0:
+                    ship_action2.AssetName = assetShips[i]
+                    ship_action2.weapon = "Cannon_System"
+                    print("alg2 dbg firing: ", ship_action2)
+                    output_message.actions.append(ship_action2)
+                    return output_message
         print('NO WEAPONS LEFT: COULD NOT FIRE')
         return output_message
 
