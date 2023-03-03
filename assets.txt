@@ -1,1350 +1,1254 @@
 asset.AssetName,asset.isHVU,asset.health,asset.PositionX,asset.PositionY,asset.PositionZ,asset.Lle, asset.weapons
-1, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+1, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-1, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+1, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-2, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+2, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-2, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+2, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-3, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+3, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-3, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+3, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-4, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+4, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-4, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+4, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-5, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+5, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-5, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+5, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-6, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+6, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-6, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+6, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-7, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+7, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-7, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+7, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-8, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+8, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-8, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
+8, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
 Quantity: 3
 WeaponState: "Ready"
-]
-9, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-9, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
+9, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 4
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 3
 WeaponState: "Ready"
 ]
-10, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 3
-WeaponState: "Ready"
-]
-10, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
+9, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
 Quantity: 2
 WeaponState: "Ready"
+, SystemName: "Chainshot_System"
+WeaponState: "Ready"
 ]
-11, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+10, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 4
+WeaponState: "Ready"
+, SystemName: "Chainshot_System"
+WeaponState: "Ready"
+]
+10, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
 Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
+WeaponState: "Ready"
+]
+11, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
 Quantity: 3
 WeaponState: "Ready"
+, SystemName: "Chainshot_System"
+WeaponState: "Ready"
 ]
-11, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+11, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
 Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 1
 WeaponState: "Ready"
 ]
-12, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 3
-WeaponState: "Ready"
-]
-12, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-13, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 3
-WeaponState: "Ready"
-]
-13, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-14, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 3
-WeaponState: "Ready"
-]
-14, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-15, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 3
-WeaponState: "Ready"
-]
-15, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-16, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 3
-WeaponState: "Ready"
-]
-16, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-17, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 3
-WeaponState: "Ready"
-]
-17, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-18, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 3
-WeaponState: "Ready"
-]
-18, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-19, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
+12, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
 Quantity: 2
 WeaponState: "Ready"
-]
-19, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
 , SystemName: "Chainshot_System"
-Quantity: 1
 WeaponState: "Ready"
 ]
-20, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-20, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-21, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-21, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+12, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
 Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-22, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-22, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+13, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
 Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-23, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-23, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+13, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
 Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-24, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-24, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-25, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-25, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-26, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-26, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-27, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-Quantity: 1
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-Quantity: 1
-WeaponState: "Ready"
-]
-27, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-28, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+14, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
 Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-28, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-29, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+14, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
 Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-29, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-30, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+15, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
 Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-30, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+15, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-31, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+16, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-31, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+16, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-32, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+17, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-32, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+17, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-33, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+18, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-33, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+18, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-34, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+19, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-34, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+19, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-35, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+20, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-35, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+20, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-36, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+21, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-36, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+21, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-37, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+22, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-37, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+22, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-38, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+23, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-38, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+23, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-39, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+24, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-39, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+24, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-40, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+25, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-40, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+25, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-41, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+26, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-41, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+26, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-42, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+27, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-42, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+27, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-43, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+28, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-43, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+28, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-44, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+29, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-44, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+29, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-45, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+30, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-45, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+30, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-46, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+31, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-46, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+31, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-47, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+32, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-47, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+32, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-48, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+33, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-48, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+33, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-49, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+34, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-49, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+34, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-50, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+35, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-50, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+35, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-51, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+36, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-51, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+36, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-52, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+37, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-52, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+37, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-53, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+38, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-53, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+38, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-54, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+39, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-54, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+39, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-55, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+40, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-55, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+40, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-56, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+41, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-56, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+41, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-57, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+42, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-57, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+42, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-58, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+43, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-58, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+43, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-59, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+44, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-59, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+44, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-60, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+45, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-60, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+45, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-61, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+46, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-61, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+46, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-62, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+47, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-62, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+47, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-63, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+48, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-63, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+48, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-64, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+49, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-64, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+49, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-65, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+50, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-65, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+50, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-66, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+51, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-66, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+51, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-67, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+52, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-67, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+52, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-68, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+53, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-68, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+53, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-69, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+54, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-69, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+54, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-70, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+55, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-70, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+55, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-71, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+56, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-71, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+56, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-72, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+57, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-72, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+57, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-73, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+58, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-73, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+58, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-74, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+59, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-74, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+59, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-75, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+60, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-75, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+60, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-76, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+61, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-76, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+61, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-77, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+62, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-77, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+62, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-78, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+63, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-78, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+63, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-79, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+64, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-79, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+64, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-80, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+65, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-80, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+65, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-81, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+66, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-81, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+66, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-82, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+67, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-82, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+67, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-83, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+68, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-83, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+68, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-84, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+69, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-84, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+69, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-85, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+70, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-85, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+70, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-86, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+71, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-86, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+71, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-87, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+72, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-87, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+72, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-88, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+73, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-88, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+73, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-89, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+74, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-89, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+74, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-90, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+75, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-90, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+75, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-91, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+76, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-91, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+76, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-92, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+77, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-92, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+77, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-93, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+78, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-93, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+78, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-94, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+79, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-94, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+79, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-95, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+80, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-95, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+80, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-96, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+81, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-96, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+81, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-97, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+82, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-97, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+82, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-98, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+83, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-98, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+83, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-99, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+84, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-99, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+84, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-100, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+85, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-100, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+85, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-101, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+86, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-101, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+86, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-102, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+87, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-102, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+87, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-103, HVU_Galleon_0, True, 4, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+88, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-103, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+88, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-104, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+89, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-104, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+89, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-105, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+90, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-105, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+90, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-106, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+91, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-106, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+91, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-107, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+92, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-107, Galleon_0, False, 4, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+92, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-108, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+93, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-108, Galleon_0, False, 3, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+93, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-109, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+94, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-109, Galleon_0, False, 3, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+94, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-110, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+95, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-110, Galleon_0, False, 3, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+95, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-111, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+96, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-111, Galleon_0, False, 3, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+96, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-112, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+97, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-112, Galleon_0, False, 3, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+97, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-113, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+98, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-113, Galleon_0, False, 3, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+98, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-114, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+99, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-114, Galleon_0, False, 3, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+99, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-115, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+100, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-115, Galleon_0, False, 3, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+100, HVU_Galleon_2, True, 4, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-116, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+101, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-116, Galleon_0, False, 3, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+101, HVU_Galleon_2, True, 3, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-117, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+102, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-117, Galleon_0, False, 2, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+102, HVU_Galleon_2, True, 2, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-118, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+103, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-118, Galleon_0, False, 2, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+103, HVU_Galleon_2, True, 2, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-119, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
+104, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-119, Galleon_0, False, 2, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+104, HVU_Galleon_2, True, 1, 18144.251, -3323.807, 0.0, [24.97, -84.82, 0.0], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
 ]
-120, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-120, Galleon_0, False, 2, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-121, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-121, Galleon_0, False, 2, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-122, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-122, Galleon_0, False, 2, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-123, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-123, Galleon_0, False, 2, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-124, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-124, Galleon_0, False, 2, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-125, HVU_Galleon_0, True, 3, -6646.958, -3703.767, 0.0, [24.966676690334545, -85.06593933576823, 0.0], [SystemName: "Cannon_System"
-WeaponState: "Ready"
-, SystemName: "Chainshot_System"
-WeaponState: "Ready"
-]
-125, Galleon_0, False, 2, -2973.512, -5123.395, 0.0, [24.95392129785892, -85.02949485129983, 0.0], [SystemName: "Cannon_System"
+105, Galleon_1, False, 4, -16128.224, -3326.334, 0.0, [24.969999999999995, -85.16, 9.313225746154785e-10], [SystemName: "Cannon_System"
+Quantity: 1
 WeaponState: "Ready"
 , SystemName: "Chainshot_System"
 WeaponState: "Ready"
