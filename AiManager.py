@@ -1,3 +1,5 @@
+#ez
+
 # #Imports
 # from PlannerProto_pb2 import ScenarioConcludedNotificationPb, ScenarioInitializedNotificationPb     #Scenario start/end notifications
 # from PlannerProto_pb2 import ErrorPb                                            #Error messsage if scenario fails
@@ -428,7 +430,6 @@ class AiManager:
             self.friendlyShips_curr = []  # list of names of friendly ship
             self.friendlyPositions_curr = []  # xy position of friednly ship,
             self.enemyShipsName_curr = []
-
             self.friendlyHealths_curr = []  # list of health of friendly ship
             self.fired_shots = {}  # dict of fired shot, used in alg2 so no double shot at same target
             self.new_obs_flag = False
@@ -618,35 +619,113 @@ class AiManager:
     # return output_message
 
     # simple alg to generate action
+    # def action_alg2(self, enemyShips, enemyPositions, assetShips, assetPositions, assetWeapons):
+    #     output_message: OutputPb = OutputPb()
+    #     enemyShips_unassigned = []
+    #     enemyPositions_unassigned = []
+    #
+    #     print("alg2 dbg fired shots: ", str(self.fired_shots), " remaining weapons list len: ", len(assetWeapons))
+    #     for i, enemy in enumerate(enemyShips):
+    #         if enemy in self.fired_shots.keys():
+    #             continue
+    #         enemyShips_unassigned.append(enemy)
+    #         enemyPositions_unassigned.append(enemyPositions[i])
+    #     print("*******************************************")
+    #     print("unassigned enemies", enemyShips_unassigned)
+    #     print("*******************************************")
+    #     # calc distances for each unassigned enemy
+    #     dist_enemy = np.ones(len(enemyPositions_unassigned)) * 100000
+    #     for i, enemy2 in enumerate(enemyPositions_unassigned):
+    #         for assetpos in assetPositions:
+    #             dist2 = distance(enemy2[0], enemy2[1], enemy2[2], assetpos[0], assetpos[1], assetpos[2])
+    #             if dist2 < dist_enemy[i]:
+    #                 dist_enemy[i] = dist2
+    #     dist_enemy_rounded = [round(x) for x in dist_enemy]
+    #     print("alg2 dbg dist_enemy: ", dist_enemy_rounded)
+    #     ind_sort = np.argsort(dist_enemy)
+    #     #print("alg2 dbg sort indx: ", ind_sort)
+    #     print('weapon# list ', assetWeapons)
+    #     if len(assetWeapons) == 0:
+    #         #print("alg2 dbg: no more weapon!")
+    #         return
+    #     assetWeapons = np.array(assetWeapons)
+    #     weapon_combined = np.sum(assetWeapons, axis=1)
+    #     weapon_desord = np.argsort(weapon_combined)[::-1]
+    #
+    #     # [[1,2],[3,4]]
+    #     # [[3],[7]] -> [[7][3]]
+    #
+    #    # print('weapon# combined list ', weapon_combined)
+    #     #print('ship ', assetShips)
+    #     #print('desord ', weapon_desord)  # descending order
+    #
+    #     assetWeapons_des = assetWeapons[weapon_desord]
+    #     assetShips_np = np.array(assetShips)
+    #     assetShips_des = assetShips_np[weapon_desord]
+    #     #print("alg2 dbg weapons: ", assetWeapons_des)
+    #     print("IND_SORT: ", ind_sort)
+    #     for i, ii in enumerate(ind_sort):  # loop over enemy
+    #         maxChainshots = -1
+    #         maxChainshotsIndex = -1
+    #         maxCannonsIndex = -1
+    #         maxCannons = -1
+    #
+    #         for j in range(len(assetShips)):
+    #             if assetWeapons[j][0] > maxCannons:
+    #                 maxCannons = assetWeapons[j][0]
+    #                 maxCannonsIndex = j
+    #             if assetWeapons[j][1] > maxChainshots:
+    #                 maxChainshots = assetWeapons[j][1]
+    #                 maxChainshotsIndex = j
+    #
+    #         if i > len(assetShips_des):
+    #             #print("alg2 dbg: ship # limit to fire")
+    #             break  # maximum engagement # is assetship number
+    #         if dist_enemy[ii] > 40000:
+    #             #print("alg2 dbg: enemy too far, delay for next time")
+    #             break # enemy too far to engage
+    #         # if (np.sum(assetWeapons_des[i]) == 0):
+    #         #     print("alg2 dbg: weapon # 0 for both type: ", assetShips_des[i])
+    #         #     break
+    #         ship_action2: ShipActionPb = ShipActionPb()
+    #         #print("alg2 dbg action init: ", ship_action2)
+    #         ship_action2.TargetId = enemyShips_unassigned[ii]  # ii index of the i-th closest enemy
+    #         if maxChainshots > 0:
+    #             ship_action2.AssetName = assetShips[maxChainshotsIndex]
+    #             assetWeapons[maxChainshotsIndex][1] -= 1
+    #             ship_action2.weapon = "Chainshot_System"
+    #         else:
+    #             ship_action2.AssetName = assetShips[maxCannonsIndex]
+    #             assetWeapons[maxCannonsIndex][0] -= 1
+    #             ship_action2.weapon = "Cannon_System"  # or "Cannon_System"
+    #
+    #         # if assetWeapons_des[i][1] >0:
+    #         #     ship_action2.weapon = "Chainshot_System"
+    #         # else:
+    #         #     ship_action2.weapon = "Cannon_System" # or "Cannon_System"
+    #         print("alg2 dbg firing: ", ship_action2)
+    #         output_message.actions.append(ship_action2)
+    #         self.fired_shots[enemyShips_unassigned[ii]] = ship_action2
+    #
+    #     return output_message
+
     def action_alg2(self, enemyShips, enemyPositions, assetShips, assetPositions, assetWeapons):
         output_message: OutputPb = OutputPb()
-        enemyShips_unassigned = []
-        enemyPositions_unassigned = []
-
+        enemyShip = None
+        enemyPos = None
+        print('ENEMY SHIPS: ', enemyShips)
+        #Note: get code to get distances for enemy ships from commented action_alg2
         print("alg2 dbg fired shots: ", str(self.fired_shots), " remaining weapons list len: ", len(assetWeapons))
         for i, enemy in enumerate(enemyShips):
-            if enemy in self.fired_shots.keys():
-                continue
-            enemyShips_unassigned.append(enemy)
-            enemyPositions_unassigned.append(enemyPositions[i])
-        print("*******************************************")
-        print("unassigned enemies", enemyShips_unassigned)
-        print("*******************************************")
-        # calc distances for each unassigned enemy
-        dist_enemy = np.ones(len(enemyPositions_unassigned)) * 100000
-        for i, enemy2 in enumerate(enemyPositions_unassigned):
-            for assetpos in assetPositions:
-                dist2 = distance(enemy2[0], enemy2[1], enemy2[2], assetpos[0], assetpos[1], assetpos[2])
-                if dist2 < dist_enemy[i]:
-                    dist_enemy[i] = dist2
-        dist_enemy_rounded = [round(x) for x in dist_enemy]
-        print("alg2 dbg dist_enemy: ", dist_enemy_rounded)
-        ind_sort = np.argsort(dist_enemy)
-        #print("alg2 dbg sort indx: ", ind_sort)
+            if enemy not in self.fired_shots.keys():
+                enemyShip = enemy
+                enemyPos = enemyPositions[i]
+        if enemyShip == None and enemyPos == None:
+            return output_message
         print('weapon# list ', assetWeapons)
         if len(assetWeapons) == 0:
-            #print("alg2 dbg: no more weapon!")
-            return
+            print("alg2 dbg: no more weapon!")
+            return output_message
         assetWeapons = np.array(assetWeapons)
         weapon_combined = np.sum(assetWeapons, axis=1)
         weapon_desord = np.argsort(weapon_combined)[::-1]
@@ -662,50 +741,44 @@ class AiManager:
         assetShips_np = np.array(assetShips)
         assetShips_des = assetShips_np[weapon_desord]
         #print("alg2 dbg weapons: ", assetWeapons_des)
-        print("IND_SORT: ", ind_sort)
-        for i, ii in enumerate(ind_sort):  # loop over enemy
-            maxChainshots = -1
-            maxChainshotsIndex = -1
-            maxCannonsIndex = -1
-            maxCannons = -1
+        maxChainshots = -1
+        maxChainshotsIndex = -1
+        maxCannonsIndex = -1
+        maxCannons = -1
 
-            for j in range(len(assetShips)):
-                if assetWeapons[j][0] > maxCannons:
-                    maxCannons = assetWeapons[j][0]
-                    maxCannonsIndex = j
-                if assetWeapons[j][1] > maxChainshots:
-                    maxChainshots = assetWeapons[j][1]
-                    maxChainshotsIndex = j
+        for j in range(len(assetShips)):
+            if assetWeapons[j][0] > maxCannons:
+                maxCannons = assetWeapons[j][0]
+                maxCannonsIndex = j
+            if assetWeapons[j][1] > maxChainshots:
+                maxChainshots = assetWeapons[j][1]
+                maxChainshotsIndex = j
+        # print(len(assetShips_des))
+        # if i > len(assetShips_des):
+        #     print("alg2 dbg: ship # limit to fire")
+        #     return output_message
+        # if (np.sum(assetWeapons_des[i]) == 0):
+        #     print("alg2 dbg: weapon # 0 for both type: ", assetShips_des[i])
+        #     break
+        ship_action2: ShipActionPb = ShipActionPb()
+        # print("alg2 dbg action init: ", ship_action2)
+        ship_action2.TargetId = enemyShip # ii index of the i-th closest enemy
+        if maxChainshots > 0:
+            ship_action2.AssetName = assetShips[maxChainshotsIndex]
+            assetWeapons[maxChainshotsIndex][1] -= 1
+            ship_action2.weapon = "Chainshot_System"
+        else:
+            ship_action2.AssetName = assetShips[maxCannonsIndex]
+            assetWeapons[maxCannonsIndex][0] -= 1
+            ship_action2.weapon = "Cannon_System"  # or "Cannon_System"
 
-            if i > len(assetShips_des):
-                #print("alg2 dbg: ship # limit to fire")
-                break  # maximum engagement # is assetship number
-            if dist_enemy[ii] > 40000:
-                #print("alg2 dbg: enemy too far, delay for next time")
-                break # enemy too far to engage
-            # if (np.sum(assetWeapons_des[i]) == 0):
-            #     print("alg2 dbg: weapon # 0 for both type: ", assetShips_des[i])
-            #     break
-            ship_action2: ShipActionPb = ShipActionPb()
-            #print("alg2 dbg action init: ", ship_action2)
-            ship_action2.TargetId = enemyShips_unassigned[ii]  # ii index of the i-th closest enemy
-            if maxChainshots > 0:
-                ship_action2.AssetName = assetShips[maxChainshotsIndex]
-                assetWeapons[maxChainshotsIndex][1] -= 1
-                ship_action2.weapon = "Chainshot_System"
-            else:
-                ship_action2.AssetName = assetShips[maxCannonsIndex]
-                assetWeapons[maxCannonsIndex][0] -= 1
-                ship_action2.weapon = "Cannon_System"  # or "Cannon_System"
-
-            # if assetWeapons_des[i][1] >0:
-            #     ship_action2.weapon = "Chainshot_System"
-            # else:
-            #     ship_action2.weapon = "Cannon_System" # or "Cannon_System"
-            print("alg2 dbg firing: ", ship_action2)
-            output_message.actions.append(ship_action2)
-            self.fired_shots[enemyShips_unassigned[ii]] = ship_action2
-
+        # if assetWeapons_des[i][1] >0:
+        #     ship_action2.weapon = "Chainshot_System"
+        # else:
+        #     ship_action2.weapon = "Cannon_System" # or "Cannon_System"
+        print("alg2 dbg firing: ", ship_action2)
+        output_message.actions.append(ship_action2)
+        self.fired_shots[enemyShip] = ship_action2
         return output_message
 
     # Example function for building OutputPbs, returns OutputPb
