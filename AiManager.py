@@ -815,7 +815,7 @@ class AiManager:
                 self.assetShips[asset] = []
             self.assetShips[asset].append(enemyShips[i])
         
-        if minDistanceToEnemy > 20000: #Only starts firing if missiles are 50000 away - don't want to fire too early in case not all missiles have fired yet
+        if minDistanceToEnemy > 40000: #Only starts firing if missiles are 50000 away - don't want to fire too early in case not all missiles have fired yet
             print('SHIPS TOO FAR AWAY - DON\'T ENGAGE YET', minDistanceToEnemy)
             return output_message
         
