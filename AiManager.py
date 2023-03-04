@@ -254,6 +254,7 @@ class AiManager:
         # return output_message
 
     # simple alg to generate action
+    # 3/3 fixing ai1 branch reset isaac
     def action_alg2(self, enemyShips, enemyPositions, assetShips, assetPositions, assetWeapons):
         output_message: OutputPb = OutputPb()
         enemyShips_unassigned=[]
