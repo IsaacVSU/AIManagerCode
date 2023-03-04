@@ -74,6 +74,7 @@ class AiManager:
             self.new_obs_flag = False
             self.info = ""
             self.ai_callback = None
+            print("I am resetting")
 
     
     # wang ai callback is called in receivedStatePb 
