@@ -263,22 +263,21 @@ class AiManager:
     # 3/3 fixing ai1 branch reset isaac
     def action_alg2(self, enemyShips, enemyPositions, assetShips, assetPositions, assetWeapons):
         output_message: OutputPb = OutputPb()
+        if(self.count<25):
+            return output_message
         enemyShips_unassigned=[]
         enemyPositions_unassigned = []
         print("alg2 dbg fired shots: ", str(self.fired_shots), " remaining weapons list len: ", len(assetWeapons))
-        # i = 0
-        # while(len(self.enemy_ignored)<6):
-        #     if(i>=len(enemyShips)):
-        #         break
-        #     self.enemy_ignored.append(enemyShips[i])
-        #     i+=1
+        j = 0
         for i, enemy in enumerate(enemyShips):
-            if len(self.enemy_ignored)<6:
-                if enemy in self.enemy_ignored:
-                    continue
-                else:
-                    self.enemy_ignored.append(enemy)
-                    continue
+            if len(self.enemy_ignored)<10:
+                j += 1
+                if(j>6):
+                    if enemy in self.enemy_ignored:
+                        continue
+                    else:
+                        self.enemy_ignored.append(enemy)
+                        continue
 
             if enemy in self.fired_shots.keys():
                 continue
