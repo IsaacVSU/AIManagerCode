@@ -55,6 +55,8 @@ class AiManager:
         self.new_obs_flag = False
         self.info = ""
         self.ai_callback = None
+        self.enemy_ignored =[]
+
     def reset(self):
         if(self.done):
             self.count = 0
@@ -74,6 +76,7 @@ class AiManager:
             self.new_obs_flag = False
             self.info = ""
             self.ai_callback = None
+            self.enemy_ignored =[]
             print("I am resetting")
 
     
@@ -262,6 +265,13 @@ class AiManager:
         enemyPositions_unassigned = []
         print("alg2 dbg fired shots: ", str(self.fired_shots), " remaining weapons list len: ", len(assetWeapons))
         for i, enemy in enumerate(enemyShips):
+            if len(self.enemy_ignored)<10:
+                if enemy in self.enemy_ignored:
+                    continue
+                else:
+                    self.enemy_ignored.append(enemy)
+                    continue
+
             if enemy in self.fired_shots.keys():
                 continue
             enemyShips_unassigned.append(enemy)
@@ -296,15 +306,16 @@ class AiManager:
         assetShips_np = np.array(assetShips)
         assetShips_des = assetShips_np[weapon_desord]
         print("alg2 dbg weapons: ", assetWeapons_des)
+        print("ASSETSHIPDES: ", assetShips_des)
 
         for i, ii in enumerate(ind_sort): #loop over enemy
-            if i> len(assetShips_des):
+            if i>= len(assetShips_des):
                 print("alg2 dbg: ship # limit to fire")
                 break # maximum engagement # is assetship number
             # if dist_enemy[ii] > 20000:
             #     print("alg2 dbg: enemy too far, delay for next time")
             #     break # enemy too far to engage
-            if (np.sum(assetWeapons_des[i]) ==0):
+            if assetWeapons_des[i][0] ==0 and assetWeapons[i][1] == 0:
                 print ("alg2 dbg: weapon # 0 for both type: ", assetShips_des[i] )
                 break
             ship_action2: ShipActionPb = ShipActionPb()
