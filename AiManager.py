@@ -810,7 +810,7 @@ class AiManager:
                 for i in range(len(assetShips)):
                     if i != self.hvu:
                         newAssetShips[i] = []
-            self.assetShips = newAssetShips
+                self.assetShips = newAssetShips
 
         if len(newMissiles) != 0:
             minDistanceToEnemy = 10000000000
