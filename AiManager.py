@@ -170,9 +170,11 @@ class AiManager:
             self.do_aiaction(self.ai_action_0)
         # Call function to show example of building an action
         output_message = self.createActions(msg)
-        print(output_message)
+        print("OUTPUT MSG: ", output_message)
 
         # To advance in step mode, its required to return an OutputPb
+        if(output_message is None):
+            output_message = OutputPb()
         self.ai_pub.publish(output_message)
         #self.ai_pub.publish(OutputPb())
 
