@@ -276,9 +276,13 @@ class AiManager:
 
             if enemy in self.fired_shots.keys():
                 continue
-            enemyShips_unassigned.append(enemy)
-            enemyPositions_unassigned.append(enemyPositions[i])
-
+            if enemy not in self.enemy_ignored:
+                enemyShips_unassigned.append(enemy)
+                enemyPositions_unassigned.append(enemyPositions[i])
+        
+        print("ENEMY IGNORED: ", self.enemy_ignored)
+        print("enemyShipss_unassigned: ", enemyShips_unassigned)
+        print("self.fired_shots: ", self.fired_shots)
         # calc distances for each unassigned enemy
         dist_enemy = np.ones(len(enemyPositions_unassigned)) * 100000
         for i, enemy2 in enumerate(enemyPositions_unassigned):
@@ -296,9 +300,6 @@ class AiManager:
         assetWeapons = np.array(assetWeapons)
         weapon_combined = np.sum(assetWeapons, axis=1)
         weapon_desord = np.argsort(weapon_combined)[::-1]
-
-        #[[1,2],[3,4]]
-        #[[3],[7]] -> [[7][3]]
 
         print('weapon# combined list ', weapon_combined)
         print('ship ', assetShips)
