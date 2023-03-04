@@ -267,7 +267,7 @@ class AiManager:
         enemyPositions_unassigned = []
         print("alg2 dbg fired shots: ", str(self.fired_shots), " remaining weapons list len: ", len(assetWeapons))
         for i, enemy in enumerate(enemyShips):
-            if len(self.enemy_ignored)<10:
+            if len(self.enemy_ignored)<6:
                 if enemy in self.enemy_ignored:
                     continue
                 else:
